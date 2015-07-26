@@ -4,12 +4,111 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <title>fugapiyo.github.io</title>
+    <meta name="description" content="pugapiyoのポートフォリオです">
+    <meta name="keywords" content="ポートフォリオ,fugapiyo">
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- font-awsomeの読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- highlight.jsの読み込み -->
+    <link rel="stylesheet" href="highlight/styles/tomorrow-night.css"/>
+    <script src="highlight/highlight.pack.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">fugapiyo.github.io</a>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">わたし</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  ポートフォリオ
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#app01">メッセージボート</a></li>
+                  <li><a href="#app02">Twitterクローン</a></li>
+                  <li><a href="#app03">モノリスト</a></li>
+                  <li><a href="#app04">？</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class=container-fluid>
+      <div id="about"><h1><u>わたし</u></h1></div>
+      <div class="container">
+        <div class="row">
+          <div class="profile col-sm-8">
+            <pre><code>fugapiyo.introduction
+=> "インフラ屋さん。よく利用するツールはエクセル。"
+fugapiyo.interests
+=> ["Linux", "AWS", "Ansible", "Ruby"]</code></pre>
+          </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
+          <div class="profile col-sm-4">
+            <i class="fa fa-github"></i> <a href="https://github.com/fugapiyo">https://github.com/fugapiyo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    
+    <div class=container-fluid>
+      <h1><u>ポートフォリオ</u></h1>
+      <div class="container">
+        <div class="row">
+          <div class="profile col-sm-6" id="app01">
+              <h2><i class="fa fa-calendar-o"></i> メッセージボート</h2>
+            <p>伝言掲示板的なアプリケーション</p>
+          </div>
+          <div class="profile col-sm-6" id="app02">
+              <h2><i class="fa fa-twitter"></i> Twitterクローン</h2>
+            <p>Twitter的なアプリケーション</p>
+          </div>
+          <div class="profile col-sm-6" id="app03">
+              <h2><i class="fa fa-heart"></i> モノリスト</h2>
+            <p>Sumally的なアプリケーション</p>
+          </div>
+          <div class="profile col-sm-6" id="app04">
+              <h2><i class="fa fa-star"></i> ？</h2>
+            <p>あっと驚くアプリケーション</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class=container-fluid>
+      <div id="contact"><h1><u>お問い合わせ</u></h1>
+      <div class="container">
+        <div class="row">
+          <div class="profile col-sm-6">
+            <p>Githubにて受付けます。</p>
+          </div>
+        </div>
+       </div>
+    </div>
+    </body>
 </html>
